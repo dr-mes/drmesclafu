@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mr.css">
+    <link rel="icon" href="lobo.png">
+    <title>Dr. Mesclafu</title>
+</head>
+<body>
+   <header> 
+      <h1><strong>Quem sou eu?</strong></h1>
+      <nav>  
+        <ul>
+             <li><a href="index.html">VOLTAR</a></li>
+        </ul>
+     </nav>   
+   </header>   
+   <div id="progressbar"></div>
+   <div id="scrollPath"></div>
+   <section>
+    <div id="vit">       
+       <p><img src="spartan.png"width="200px">Olá, sou o Dr.Mesclafu e agora falarei um pouco sobre mim.<br> Meu nome real é João Victor, minha franquia favorita é Doom, 
+         sendo o primeiro de 1993 meu jogo favorito.<br> Em relação a música, gosto de Rock, Heavy Metal, Blues e Country.<br> Tenho Xbox
+         há mais de cinco anos e criei minha conta da Xbox Live em 2016, sendo Halo meu exclusivo favorito.<br><img src="chief.png"width="140px"> Criei meu canal em 2015 
+         para fazer algumas gameplays de GTA.<br> Depois comecei a fazer vídeos de Minecraft, nesse tempo criei inúmeros canais, 
+         deixando de lado o principal.<br> Em 2018 mudei o nome do canal para Dr.Mesclafu e decidi recomeçar, consegui alguns inscritos
+         e comecei a fazer lives, tendo criado meu canal para compartilhar meu gosto pessoal e fazer gameplays.</P>
+    </div>
+</section>
+<script type="text/javascript">
+  let progress=document.getElementById('progressbar');
+  let totalHeight=document.body.scrollHeight-window.innerHeight;
+  window.onscroll=function(){
+      let progressHeight= (window.pageYOffset/totalHeight)*100;
+      progress.style.height=progressHeight+"%";
+  }
+</script> 
+</body>
+</html>

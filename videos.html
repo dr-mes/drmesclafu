@@ -1,0 +1,52 @@
+<!DOCTYPE html><!--Um site pra quem joga games em geral-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dr. Mesclafu</title>
+        <link rel="stylesheet" href="mr.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="lobo.png">        
+    </head>
+    <body>
+        <header>
+            <h1><strong>Meus videos</strong></h1>
+            <nav>  
+                <ul>
+                     <li><a href="index.html">VOLTAR</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <section>
+            <div id="vit">
+                <img src="pesca.jpeg" height ="300px" width="1200px">
+                <br>
+                <br>
+                <h2>Dois dos meus melhores videos</h2> <!--Videos colocados intensionalmente-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eQtxnbnq3hI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1E29ILulJws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <br>
+                <h2>Terror puro</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F3QBb8BDh8E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/teJwp4BtGWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <br>
+                <h2>Lives com os inscritos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s7JQ2XP1wBM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kmV_p0_e5M8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <footer>
+                <p>Para mais videos legais como esses, já sabe né...<a href="https://www.youtube.com/channel/UC_bai_34jgSxOaLs5BO64Jg" target="_blank">Acessa aqui.</p><!--Lincagem para o site-->
+            </footer>
+        </section>
+        <script type="text/javascript">
+          let progress=document.getElementById('progressbar');
+          let totalHeight=document.body.scrollHeight-window.innerHeight;
+          window.onscroll=function(){
+              let progressHeight= (window.pageYOffset/totalHeight)*100;
+              progress.style.height=progressHeight+"%";
+          }
+        </script> 
+    </body>
